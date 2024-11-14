@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="double-slider-box">
+        <div class="range-slider">
+            <span class="range-track"></span>
+            <input type="range" name="min_val" class="min-val" oninput="slideMin()" min="1000" max="12000" step="100" value="2000">
+            <input type="range" name="max_val" class="max-val" oninput="slideMax()" min="1000" max="12000" step="100" value="7000">
+        </div>
+        <div class="input-box">
+            <div class="min-box">
+                <div class="input-wrap">
+                    <span class="input-addon">تومان</span>
+                    <input type="text" name="min_input" onchange="setMinInput()" class="input-field min-input">
+                </div>
+            </div>
+            <div class="min-box">
+                <div class="input-wrap">
+                    <span class="input-addon">تومان</span>
+                    <input type="text" name="max_input" onchange="setMaxInput()" class="input-field max-input">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
